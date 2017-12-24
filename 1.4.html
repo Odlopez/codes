@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var userAnswer = prompt("Каково «официальное» название JavaScript?", "");
+
+	if (userAnswer === "ECMAScript") {
+		alert("Верно!");
+	} else alert ("Не знаете? «ECMAScript»!");
+
+	var userAnswer2 = +prompt("Введите число");
+
+	if (userAnswer2 > 0) {
+		alert( 1 );
+	} else if (userAnswer2 < 0) {
+		alert( -1 );
+	} else alert( 0 );
+
+	// var message = (userAnswer2 > 0) ? 1 : (userAnswer2 < 0) ? -1 : 0;
+	// alert (message);
+
+	var userAnswer3 = prompt("Введите логин", "");
+
+	if (userAnswer3 === null) {
+
+		alert("Вход отменен");
+
+	} else if (userAnswer3 != "Админ") {
+
+		alert("Я Вас не знаю");
+
+	} else {
+
+		var password = prompt("Введите пароль", "");
+
+		if (password === null) {
+
+			alert("Вход отменен");
+
+		} else if (password == "Черный Властелин") {
+
+			alert("Добро пожаловать!");
+
+		} else alert("Пароль неверен");
+
+	}
+
+	// result = (a + b < 4) ? "Мало" : "Много";
+
+	var message;
+
+	message = (login == "Вася") ? "Привет" :
+		(login == "Директор") ? "Здравствуйте" :
+		(login == "") ? "Нет логина" : "";
+
+
+</script>
